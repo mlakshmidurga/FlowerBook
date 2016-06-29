@@ -1,0 +1,16 @@
+<div ng-controller="flowerctrl" class="container-fluid">
+  <h2>Flowers</h2>
+  <div class="row">
+    <div ng-repeat="flower in flowerdetails.list">
+      <div class="col-md-3">
+        <div class="flowers">
+          <img ng-src="{{flower.image}}">
+          <div class="Flowername">{{ flower.Flowername }}</div>
+          <div class="Description">{{ flower.Description}}</div>
+          <div class="Price">{{flower.Price }}</div>
+          <a ng-href="#/flower/{{$index}}" class="btn btn-default">getflowerdetails</a>
+        </div>
+      </div>
+    </div> 
+  </div>   
+</div>

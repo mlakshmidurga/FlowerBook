@@ -1,0 +1,26 @@
+var App = angular.module('flowerbook', ['ngRoute', 'toastr']);
+  App.config(function($routeProvider){
+    $routeProvider.
+    when('/',{
+      templateUrl:"javascripts/flowerbook/views/home.html"
+    }).
+    when('/signin',{
+      templateUrl:"javascripts/flowerbook/views/authentication/signin.html",
+      controller:"authctrl"
+    }).
+    when('/signup',{
+      templateUrl:"javascripts/flowerbook/views/authentication/signup.html",
+      controller:"authctrl"
+    })
+    .when('/flowers',{
+      templateUrl:"javascripts/flowerbook/views/flowers/flowers.html",
+      controller:"flowerctrl"
+    })
+    .when('/flower/:id',{
+      templateUrl:"javascripts/flowerbook/views/flowers/flower.html",
+      controller:"flowerctrl"
+    })
+    .otherwise({
+    redirectTo:"/",
+  })
+});

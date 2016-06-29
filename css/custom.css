@@ -1,0 +1,49 @@
+.header{
+	margin-bottom:0px;
+}
+.images{
+	padding-right:0px;
+	padding-left:0px;
+	margin-bottom: 0px;
+}
+.login{
+	
+	padding-top:50px;
+	margin-bottom:0px;
+}
+.align_center{
+	text-align: center;
+}
+.logout{
+	padding-top:50px;
+	margin-bottom:0px;
+}
+.flower{
+	padding-top:10px;
+	margin-left:20px;
+	margin-right:20px;
+	padding-left:30px;
+
+}
+.innerflower{
+	padding-top:20px;
+	margin-left:10px;
+	margin-right:10px;
+	padding-bottom:50px;
+}
+.flowers{
+	height:120px;
+	text-align: center;
+}
+.flower{
+	height:120px;
+	width:200px;
+
+}
+.footer{
+	margin:0px;
+	text-align: center;
+	color:red;
+	border:0px;
+
+}
